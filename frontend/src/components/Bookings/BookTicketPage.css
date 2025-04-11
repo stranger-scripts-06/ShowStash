@@ -1,0 +1,99 @@
+.book-ticket-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-section,
+.right-section {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center contents vertically */
+  align-items: center; /* Center contents horizontally */
+  flex: 1;
+  padding: 20px;
+  background: #2b2b2b;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.seat-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.seat-row {
+  display: flex;
+  gap: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.seat.available {
+  background: #4caf50;
+  color: white;
+}
+
+.seat.booked {
+  background: #f44336;
+  color: white;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background: #2196f3;
+}
+
+.book-button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-button:disabled {
+  background: #cccccc;
+}
+
+p {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  color: #d1d1d1; /* Subtle and readable text color */
+  font-size: 1.2rem; /* Slightly larger font for readability */
+  line-height: 1.6; /* Add breathing room between lines */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  margin: 10px 0; /* Spacing between paragraphs */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Slight upward motion */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,27 @@
+/* src/components/Events/AddEvent.css */
+.add-event-container {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .add-event-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-event-form input,
+  .add-event-form textarea,
+  .add-event-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .add-event-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

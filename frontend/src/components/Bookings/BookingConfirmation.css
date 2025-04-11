@@ -1,0 +1,111 @@
+/* Container for all bookings */
+.booking-container {
+  padding: 20px;
+  background: #f4f4f4;
+  min-height: 100vh;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* Space between the tickets */
+  justify-items: center; /* Center the tickets within each column */
+  margin-top: 130px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  grid-column: span 3; /* Make the error message span across all columns */
+}
+
+/* Movie ticket design */
+.movie-ticket {
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  position: relative;
+  max-width: 500px;
+  width: 100%; /* Ensure it takes full width of the column */
+}
+
+.movie-ticket .ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.movie-ticket .ticket-header h3 {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.movie-ticket .ticket-status {
+  font-size: 1.1em;
+  color: #4caf50;
+  background-color: #e0f7e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.movie-ticket .ticket-details {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.movie-ticket .ticket-details p {
+  margin: 5px 0;
+}
+
+.movie-ticket .ticket-seats {
+  font-size: 1em;
+  color: #777;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.movie-ticket .ticket-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.movie-ticket:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Ticket animations */
+.movie-ticket {
+  animation: fadeInTicket 0.5s ease-in-out;
+}
+
+@keyframes fadeInTicket {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.p1 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  color: #090808; /* Subtle and readable text color */
+  font-size: 1.2rem; /* Slightly larger font for readability */
+  line-height: 1.6; /* Add breathing room between lines */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  margin: 10px 0; /* Spacing between paragraphs */
+}

@@ -1,0 +1,134 @@
+/* PaymentForm.css */
+
+.payment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f6f9fc;
+  }
+  
+  .payment-form {
+    background: #ffffff;
+    padding: 40px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .branding {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .branding img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .branding p {
+    font-size: 0.9rem;
+    color: #525f7f;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .payment-form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #32325d;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #525f7f;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #e6ebf1;
+    border-radius: 5px;
+    background: #fafafa;
+    transition: 0.3s;
+  }
+  
+  .input-group input:focus {
+    border-color: #6772e5;
+    box-shadow: 0 0 5px rgba(103, 114, 229, 0.5);
+    outline: none;
+  }
+  
+  .input-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .pay-button {
+    width: 100%;
+    background: #6772e5;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .pay-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pay-button:hover:not(:disabled) {
+    background: #5469d4;
+  }
+  
+  .pay-button:active:not(:disabled) {
+    background: #4354b8;
+  }
+  
+  .payment-status {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  .payment-status.success {
+    background: #4caf50;
+    color: white;
+  }
+  
+  .payment-status.failure {
+    background: #f44336;
+    color: white;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .payment-form {
+      width: 90%;
+    }
+  }
+  
