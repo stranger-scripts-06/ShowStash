@@ -1,11 +1,11 @@
 # My Fullstack App
 
-## í³¦ Backend
+## Backend
 - Navigate: `cd backend`
 - Install: `npm install`
 - Run: `npm start`
 
-## í¾¨ Frontend
+## Frontend
 - Navigate: `cd frontend`
 - Install: `npm install`
 - Run: `npm start`
