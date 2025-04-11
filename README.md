@@ -1,4 +1,4 @@
-# My Fullstack App
+# ShowStash
 
 ## Backend
 - Navigate: `cd backend`
